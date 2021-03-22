@@ -7,5 +7,11 @@ draft: false
 Getting started with the blog
 
 ```java
-System.out.println("Hello world!");
+public class MyMain {
+
+	public static void main(String[] args) {
+		Demo demo = new Demo();
+		demo.setHeader("yaba-daba-duu");
+	}
+}
 ```
