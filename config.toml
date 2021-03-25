@@ -1,7 +1,9 @@
 baseURL = "https://tjoosep.github.io/"
 languageCode = "en-us"
 title = "The simple engineer blog"
-theme="hugo-notepadium"
+theme = "hugo-notepadium"
+paginate = 10
+summaryLength = 50
 
 [markup.highlight]
 codeFences = true
@@ -17,6 +19,7 @@ theme = "intellij"
 
 [params.nav]
 showCategories = true
+showTags = true	
 
 
 # custom navigation items
