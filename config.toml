@@ -4,6 +4,10 @@ title = "The simple engineer blog"
 theme = "hugo-notepadium"
 paginate = 10
 summaryLength = 50
+math = true
+
+[permalinks]
+posts = "/posts/"
 
 [markup.highlight]
 codeFences = true
@@ -21,9 +25,19 @@ theme = "intellij"
 showCategories = true
 showTags = true	
 
-
 # custom navigation items
-
 [[params.nav.custom]]
 title = "About"
 url = "/about"
+
+[[params.nav.custom]]
+title = "Posts"
+url = "/posts"
+
+[[params.nav.custom]]
+title = "DS"
+url = "/ds"
+
+[[params.nav.custom]]
+title = "OOP"
+url = "/oop"
