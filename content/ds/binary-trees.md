@@ -77,10 +77,10 @@ You can think average case as a case where everytime you cut your search into ha
 
 #### Implementation
 
-How to implement a tree into BST? 
-* make sure that the elements are comparable so that we can order them insode the tree. 
+How to implement a tree as BST? 
+* make sure that the elements are comparable so that we can order them inside the tree. 
 
-when insterting an element we want to compare its value to the value stored in the current node we're considering to decide on one of the following: 
+When insterting an element we want to compare its value to the value stored in the current node we're considering to decide on one of the following: 
 * recurse down left subtree ( < case )
 * recurese down right subtree ( > case )
 * handle finding a duplicate value ( = case )
@@ -91,19 +91,19 @@ when insterting an element we want to compare its value to the value stored in t
 		
 		7
 
-2. insert 20
+2. insert 20.
 		
 		7 
 	   	  \ 
 	   	   20
 
-3. insert 5
+3. insert 5. 
 		
 		7 
 	   / \ 
 	  5   20
 
-4. insert 15
+4. insert 15.
 
 		7 
 	   / \ 

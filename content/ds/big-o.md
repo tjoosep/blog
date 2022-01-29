@@ -64,8 +64,8 @@ for (i = 0; i < n; i++) {
 
 Why this is O(n^2)? 
 
-It goes something like this: 
-* for the beginning, let's focus on the second loop.
+It goes like this: 
+* we need to figure our from inside out, because inner loops happen first. So let's focus on the second loop.
 * since _i_ goes from [0, n) the amount of looping done is directly determine by what _i_ is.
 * remark that if _i = 0_, we do _n_ work, if _i=1_, we do _n-1_ work, if _i = 2_, we do _n - 2_ work, etc.
 
@@ -97,15 +97,15 @@ We will get the following function:
 f(n) = 3n * (40 + n^3/2) = 3n / 40 + 3n^4/2 
 
 To break it down:
-* 3n ==> outer while loop, which goes through 3*n
-* (40 + n^3/2) ==> 40 comes from the first inner loop since 
-j = 10 and we go constant amount times (in this case 50), 
-and n^3 / 2 comes n*n*n and j is incremented 2 times each time. 
+1. 3n ==> outer while loop, which goes through 3*n
+2. 40 + (n^3/2) ==> 40 comes from the first inner loop since 
+   j = 10 and we go constant amount times (in this case 50), 
+   and n^3 / 2 comes n*n*n and j is incremented 2 times each time. 
 
 since inner while loops are 'inner', we need to multiply them.
 
 And to put it all together we get 
-3n / 40  + 3n^4 / 2
+3n / (40  + (3n^4 / 2)) => 3/2n * (n^3 + 80) => remove constants => n * n^3 => n^4
 
 which in big O notation becomes
 O(f(n)) = O(n^4)

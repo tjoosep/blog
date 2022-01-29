@@ -1,6 +1,6 @@
 baseURL = "https://tjoosep.github.io/"
 languageCode = "en-us"
-title = "The simple engineer blog"
+title = "Just blog"
 theme = "hugo-notepadium"
 paginate = 10
 summaryLength = 50
@@ -22,22 +22,43 @@ use = "none"
 theme = "intellij"
 
 [params.nav]
-showCategories = true
+showCategories = false
 showTags = true	
 
 # custom navigation items
-[[params.nav.custom]]
-title = "About"
-url = "/about"
-
 [[params.nav.custom]]
 title = "Posts"
 url = "/posts"
 
 [[params.nav.custom]]
-title = "DS"
+title = "Data structures"
 url = "/ds"
 
 [[params.nav.custom]]
 title = "OOP"
 url = "/oop"
+
+[[params.nav.custom]]
+title = "SOLID"
+url = "/solid"
+
+[[params.nav.custom]]
+title = "Algorithms"
+url = "/algorithms"
+
+[[params.nav.custom]]
+title = "Design patterns"
+url = "/patterns"
+
+[[params.nav.custom]]
+title = "Hash table"
+url = "/hash-table"
+
+[[params.nav.custom]]
+title = "Graphs"
+url = "/graphs"
+
+
+[[params.nav.custom]]
+title = "Trees"
+url = "/trees"

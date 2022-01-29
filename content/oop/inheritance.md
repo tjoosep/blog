@@ -42,7 +42,7 @@ public class Mobile {
 
 Now we are in trouble if we want to add more attributes that are common. 
 Everything will get messy if we have more than, lets say, 5 object with some similar, some different attributes. 
-E.g tv has manufacturer, left in stock. Mobile has type, extra gear...
+E.g tv has manufacturer, left in stock. Mobile has, for example, a type, a camera...
 
 But as we can see they all have common things, like price, name, etc. 
 
